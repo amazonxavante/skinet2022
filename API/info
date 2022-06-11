@@ -1,0 +1,16 @@
+skinet cd API
+dotnet run
+dotnet watch run 
+Nutget Gallery Package :microsoft.entityframeworkcore
+dotnet tool list -g
+dotnet tool install --global dotnet-ef --version 6.0.5
+dotnet tool update --global dotnet-ef --version 6.0.5
+dotnet ef database update
+dotnet tool update --global dotnet-ef --version 6.0.5 0r (6.0.8)
+dotnet watch run
+C:\Users\willi\OneDrive\skinet> dotnet build
+
+
+
+GETHUB
+git init 
