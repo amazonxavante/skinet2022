@@ -9,8 +9,22 @@ dotnet ef database update
 dotnet tool update --global dotnet-ef --version 6.0.5 0r (6.0.8)
 dotnet watch run
 C:\Users\willi\OneDrive\skinet> dotnet build
+Drop Database : dotnet ef database drop -p Infrastructure API 
+dotnet ef migrations remove
+Generate New Migration:  dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+Remove Previous Migrations:  dotnet ef migrations  remove -p Infrastructure -s API
+
+Drop Database: dotnet ef database drop -p Infrastructure -s API
+dotnet ef migrations remove -p Infrastructure -s API
+
+Initi do
 
 
 
 GETHUB
 git init 
+
+Search Class:
+Crl+p
+Website Convert CSV to JSON
+https://csvjson.com/

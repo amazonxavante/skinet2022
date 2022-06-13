@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+<PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
@@ -8,10 +13,4 @@
    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.5" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
-</Project>
+ </Project>
