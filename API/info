@@ -21,10 +21,18 @@ Initi do
 
 
 
-GETHUB
-git init 
+GETHUB Steps:
+1. git add . 
+2. git commit -m "End of Section 3"
+3. git push origin master
+
 
 Search Class:
 Crl+p
 Website Convert CSV to JSON
 https://csvjson.com/
+
+AutoMapper Package:
+Nutget Package Manager:
+Search:AutoMapper.Extensions.Microsoft
+AutoMapper.Extensions.Microsoft.DependencyInjection
