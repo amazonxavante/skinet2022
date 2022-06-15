@@ -16,10 +16,12 @@ Remove Previous Migrations:  dotnet ef migrations  remove -p Infrastructure -s A
 
 Drop Database: dotnet ef database drop -p Infrastructure -s API
 dotnet ef migrations remove -p Infrastructure -s API
+/////////////////////////////////////////////////////////////////////
 
-Initi do
+GITHUB TUTORIAL COURSE
+github.com/TryCatchLearn/Skinet
 
-
+///////////////////////////////////////////////////////////////////
 
 GETHUB Steps:
 1. git add . 
@@ -36,3 +38,7 @@ AutoMapper Package:
 Nutget Package Manager:
 Search:AutoMapper.Extensions.Microsoft
 AutoMapper.Extensions.Microsoft.DependencyInjection
+
+Swagger
+https://localhost:5001/swagger/v1/swagger.json
+https://localhost:5001/swagger/index.html
