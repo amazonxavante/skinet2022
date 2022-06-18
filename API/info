@@ -39,6 +39,28 @@ Nutget Package Manager:
 Search:AutoMapper.Extensions.Microsoft
 AutoMapper.Extensions.Microsoft.DependencyInjection
 
-Swagger
+Swagger:
 https://localhost:5001/swagger/v1/swagger.json
 https://localhost:5001/swagger/index.html
+
+Angular Program:
+valor-software.com/ngx-bootstrap
+http://bit.ly/2Hn8HjG
+https://valor-software.com/ngx-bootstrap/#/
+nodejs.org/en/
+angular.io
+ 
+ @angular/cli@14.0.2
+ 
+ cd client
+ ng serve
+ 
+ ng --version
+ npm install -g @angular/cli@13
+ 
+ unpkg.com/browse/@angular/core@13.1.0-next.0/package.json
+ 
+ ng new client --strict false
+
+Bootstrap:
+npm install bootstrap@4.6.0
