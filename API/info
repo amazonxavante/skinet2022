@@ -1,3 +1,4 @@
+Author Of Project: Neil Cummings
 skinet cd API
 dotnet run
 dotnet watch run 
@@ -18,16 +19,15 @@ Drop Database: dotnet ef database drop -p Infrastructure -s API
 dotnet ef migrations remove -p Infrastructure -s API
 /////////////////////////////////////////////////////////////////////
 
-GITHUB TUTORIAL COURSE
+GITHUB TUTORIAL COURSE:
 github.com/TryCatchLearn/Skinet
 
 ///////////////////////////////////////////////////////////////////
 
 GETHUB Steps:
 1. git add . 
-2. git commit -m "End of Section 3"
+2. git commit -m "End of Section 7"
 3. git push origin master
-
 
 Search Class:
 Crl+p
@@ -51,16 +51,24 @@ nodejs.org/en/
 angular.io
  
  @angular/cli@14.0.2
- 
- cd client
+  cd client
  ng serve
- 
+
  ng --version
  npm install -g @angular/cli@13
  
- unpkg.com/browse/@angular/core@13.1.0-next.0/package.json
- 
+ unpkg.com/browse/@angular/core@13.1.0-next.0/package.json 
  ng new client --strict false
 
 Bootstrap:
 npm install bootstrap@4.6.0
+
+Ng Generate:
+ng g 
+ng g c nav-bar --skip-tests
+
+Bootstrap:
+Learn More About Css Style: https://flexboxfroggy.com/
+
+Json Reader:
+http://json2ts.com/
