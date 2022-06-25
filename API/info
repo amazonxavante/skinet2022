@@ -53,6 +53,7 @@ angular.io
  @angular/cli@14.0.2
   cd client
  ng serve
+ cd client/src/app
 
  ng --version
  npm install -g @angular/cli@13
