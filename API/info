@@ -73,3 +73,8 @@ Learn More About Css Style: https://flexboxfroggy.com/
 
 Json Reader:
 http://json2ts.com/
+
+Tutorial Need to Make About Page:
+Section 10
+Toastr Module:
+npm install ngx-toastr --legacy-peer-deps 
