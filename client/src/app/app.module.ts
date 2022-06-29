@@ -12,6 +12,7 @@ import { ErrorIntercetor } from './core/interceptors/error.interceptors';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { ErrorIntercetor } from './core/interceptors/error.interceptors';
     HttpClientModule,
     CoreModule,
     HomeModule,
+   
     
   ],
   providers: [

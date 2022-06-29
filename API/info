@@ -25,9 +25,10 @@ github.com/TryCatchLearn/Skinet
 ///////////////////////////////////////////////////////////////////
 
 GETHUB Steps:
+git/index.lock
 1. git add . 
-2. git commit -m "End of Section 8"
-3. git push origin master
+2. git commit -m "End of Section 12"
+3. git push origin master Everything up-to-date
 
 Search Class:
 Crl+p
@@ -50,8 +51,17 @@ https://valor-software.com/ngx-bootstrap/#/
 nodejs.org/en/
 angular.io
  
+ Angular Version:
+ ng --version
+ ng build
+ ng update @angular/cli @angular/core --allow-dirty
+
+Angular Update:
+ng update @angular/cli @angular/core --allow-dirty --force
+
  @angular/cli@14.0.2
   cd client
+  --help
  ng serve
  cd client/src/app
 
@@ -78,3 +88,6 @@ Tutorial Need to Make About Page:
 Section 10
 Toastr Module:
 npm install ngx-toastr --legacy-peer-deps 
+
+Pending:
+Section 131 Spinner Not load Spinner Package
