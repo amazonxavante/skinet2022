@@ -28,7 +28,7 @@ GETHUB Steps:
 git/index.lock
 1. git add . 
 2. git commit -m "End of Section 12"
-3. git push origin master Everything up-to-date
+3. git push origin master 
 
 Search Class:
 Crl+p
@@ -91,3 +91,14 @@ npm install ngx-toastr --legacy-peer-deps
 
 Pending:
 Section 131 Spinner Not load Spinner Package
+
+Docker:
+Password: Brasilia2020
+Name: Moonlight2020
+UserName: williamvitorino@hotmail.com
+Portal: http://127.0.0.1:8081
+
+Redis Commander:
+http://127.0.0.1:8081/
+Password: secret
+UserName: root
