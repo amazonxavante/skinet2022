@@ -27,7 +27,7 @@ github.com/TryCatchLearn/Skinet
 GETHUB Steps:
 git/index.lock
 1. git add . 
-2. git commit -m "End of Section 12"
+2. git commit -m "End of Section 13"
 3. git push origin master 
 
 Search Class:
@@ -59,7 +59,9 @@ angular.io
 Angular Update:
 ng update @angular/cli @angular/core --allow-dirty --force
 
- @angular/cli@14.0.2
+npm uninstalling Node.js v16 to v12
+
+ @angular/cli@14.0.2:
   cd client
   --help
  ng serve
@@ -97,8 +99,20 @@ Password: Brasilia2020
 Name: Moonlight2020
 UserName: williamvitorino@hotmail.com
 Portal: http://127.0.0.1:8081
+Install Docker: docker-compose up --detach
+
+Docker Error:
+Inf: docker version 
+error during connect: This error may indicate that the docker daemon is not running.:
+ Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/version": open //./pipe/docker_engine:
+  The system cannot find the file specified.
+  Fix: Right Click - as administrator
 
 Redis Commander:
 http://127.0.0.1:8081/
 Password: secret
 UserName: root
+
+Guid:
+npm install uuid
+npm install uuid --legacy-peer-deps 
