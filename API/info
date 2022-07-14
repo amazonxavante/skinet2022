@@ -27,7 +27,7 @@ github.com/TryCatchLearn/Skinet
 GETHUB Steps:
 git/index.lock
 1. git add . 
-2. git commit -m "End of Section 13"
+2. git commit -m "End of Section 14"
 3. git push origin master 
 
 Search Class:
@@ -116,3 +116,15 @@ UserName: root
 Guid:
 npm install uuid
 npm install uuid --legacy-peer-deps 
+
+NuGet Gallery:
+Package: Microsoft.Aspnetcore.identity
+Package: Microsoft.IdentityModel
+Package: Microsoft.Aspnetcore.Identity
+Package: Microsoft.Aspnetcore.Identity.entityFrameworkcore
+
+New Migration: dotnet ef migrations add IdentityInitial -p Infrastructure -s API -c AppIdentityDbContext -o Identity/Migrations
+
+Password Data Identity:
+Password: Pa$$w0rd
+UserName: user
