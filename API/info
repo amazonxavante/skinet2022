@@ -27,7 +27,7 @@ github.com/TryCatchLearn/Skinet
 GETHUB Steps:
 git/index.lock
 1. git add . 
-2. git commit -m "End of Section 14"
+2. git commit -m "End of Section 15 "
 3. git push origin master 
 
 Search Class:
@@ -128,3 +128,7 @@ New Migration: dotnet ef migrations add IdentityInitial -p Infrastructure -s API
 Password Data Identity:
 Password: Pa$$w0rd
 UserName: user
+
+Maken Your  Password:
+Website: https://regexlib.com/?AspxAutoDetectCookieSupport=1
+Password Details: Password must contain at least one letter, at least one number, and be longer than six charaters.
