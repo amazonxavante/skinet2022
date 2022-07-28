@@ -132,3 +132,9 @@ UserName: user
 Maken Your  Password:
 Website: https://regexlib.com/?AspxAutoDetectCookieSupport=1
 Password Details: Password must contain at least one letter, at least one number, and be longer than six charaters.
+
+Log In Test: bob@test.com
+Password: Pa$$w0rd
+
+Learn Sass Tutorial for Beginners  : https://www.youtube.com/watch?v=_a5j7KoflTs
+learn More: angular style scss

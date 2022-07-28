@@ -8,6 +8,8 @@ import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
 import { HomeModule } from './home/home.module';
 import { ErrorIntercetor } from './core/interceptors/error.interceptors';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
 
 
 
@@ -25,11 +27,12 @@ import { ErrorIntercetor } from './core/interceptors/error.interceptors';
     HttpClientModule,
     CoreModule,
     HomeModule,
-   
+   NgxSpinnerModule,
     
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: ErrorIntercetor, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorIntercetor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true},
 
   ],
   bootstrap: [AppComponent]

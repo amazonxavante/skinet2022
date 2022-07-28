@@ -19,7 +19,6 @@ namespace API.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly IMapper _mapper;
-
         private readonly SignInManager<AppUser> _signInManager;
         private readonly ITokenService _tokenService;
         public AccountController(UserManager<AppUser>userManager,SignInManager<AppUser>
@@ -36,39 +35,29 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
-            var user = await _userManager.FindByEmailFromClaimsPrincipal(HttpContext.User);
-            
+            var user = await _userManager.FindByEmailWithAddressAsync(HttpContext.User);           
             return new UserDto
             {
-                DisplayName = user.DisplayName,
+                Email = user.Email,
                 Token = _tokenService.CreateToken(user),
-                Email = user.Email
+                DisplayName = user.DisplayName
             }; 
-
         }
-
-        [HttpGet("emailexist")]
-        public async Task<ActionResult<bool>> CheckEmailExistsAsync([FromQuery] string email)
-        {
-            return await _userManager.FindByEmailAsync(email) != null;
-        }
-
 
         [Authorize]
         [HttpGet("address")]
         public async Task<ActionResult<AddressDto>> GetUserAddress()
         {
             
-             var user = await _userManager.FindByUserByClaimsPrincipleWithAddressAsync(HttpContext.User);
+             var user = await _userManager.FindByEmailWithAddressAsync(HttpContext.User);
              return  _mapper.Map<Address, AddressDto>(user.Address);
         }
-        
 
         [Authorize]
         [HttpPut("address")]
         public async Task<ActionResult<AddressDto>> UpdateUserAddress(AddressDto address)
         {
-            var user = await _userManager.FindByUserByClaimsPrincipleWithAddressAsync(HttpContext.User);
+            var user = await _userManager.FindByEmailWithAddressAsync(HttpContext.User);
             
             user.Address = _mapper.Map<AddressDto, Address>(address);
 
@@ -79,8 +68,11 @@ namespace API.Controllers
             return BadRequest("Problem updating the user");
         }
 
-
-       
+        [HttpGet("emailexists")]
+        public async Task<ActionResult<bool>> CheckEmailExistsAsync([FromQuery] string email)
+        {
+            return await _userManager.FindByEmailAsync(email) != null;
+        }
 
         [HttpPost("login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
@@ -115,9 +107,10 @@ namespace API.Controllers
                 Email = registerDto.Email,
                 UserName = registerDto.Email
             };
-
             var result = await _userManager.CreateAsync(user,registerDto.Password);
+
             if(!result.Succeeded) return BadRequest(new ApiResponse(400));
+            
             return new UserDto
             {
                 DisplayName = user.DisplayName,
