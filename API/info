@@ -27,7 +27,7 @@ github.com/TryCatchLearn/Skinet
 GETHUB Steps:
 git/index.lock
 1. git add . 
-2. git commit -m "End of Section 17 "
+2. git commit -m "End of Section 18 "
 3. git push origin master 
 
 Search Class:
@@ -115,6 +115,8 @@ UserName: root
 
 Guid:
 npm install uuid
+npm install @angular/cdk --legacy-peer-deps 
+
 npm install uuid --legacy-peer-deps 
 
 NuGet Gallery:
@@ -138,3 +140,6 @@ Password: Pa$$w0rd
 
 Learn Sass Tutorial for Beginners  : https://www.youtube.com/watch?v=_a5j7KoflTs
 learn More: angular style scss
+
+Stepper Angular:
+ ng add @angular/cdk --allow-dirty  
