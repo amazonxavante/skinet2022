@@ -9,19 +9,22 @@ export interface IOrderToCreate {
 export interface IOrder {
     id: number;
     buyerEmail: string;
-    orderDate: Date;
+    orderDate: string;
     shipToAddress: IAddress;
     deliveryMethod: string;
     shippingPrice: number;
     orderItems: IOrderItem[];
     subtotal: number;
     status: string;
-}
-
-export interface IOrderItem {
+    total: number;
+  }
+  
+  export interface IOrderItem {
     productId: number;
     productName: string;
     pictureUrl: string;
     price: number;
     quantity: number;
-}
+  }
+
+  
