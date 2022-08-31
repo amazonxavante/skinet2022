@@ -27,7 +27,7 @@ github.com/TryCatchLearn/Skinet
 GETHUB Steps:
 git/index.lock
 1. git add . 
-2. git commit -m "End of Section 18 "
+2. git commit -m "End of Section 20 "
 3. git push origin master 
 
 Search Class:
@@ -143,3 +143,18 @@ learn More: angular style scss
 
 Stepper Angular:
  ng add @angular/cdk --allow-dirty  
+
+ Stripe Credit Card Holder:
+ Website: https://stripe.com/au
+ Account Name: williamvitorino@hotmail.com
+ Password: AustraliaWorld@@1962
+ Publishable key:
+  pk_test_51J9obhJ46QbwTtdBSxOUMK45xghCoN8ioiwX5ve45AGfZO2jIgaBCAkgQkI3jU3sEhl2xkCWclvIOHCHlVCLVFo500Er6LOvYo
+  
+Secret key:
+  sk_test_51J9obhJ46QbwTtdBY1gHc5EdcZYIn6CjVroy6E44K5J6Thx6E6YFfZ93o0QNTBx3McnY9BSX2f0XpeVG3tJaRCDh008uVlTJwn
+
+ Signing secret: whsec_b716b650e1f83b6a9717e33ea6635e1c92a63a3ae7463066194d5252a4581360 
+
+Credit Card Number: 4242 4242 4242 4242
+  Stripe: stripe listen -f https://localhost:5001/api/payments/webhook -e payment_intent.succeed,payment_intent.payment_failed
