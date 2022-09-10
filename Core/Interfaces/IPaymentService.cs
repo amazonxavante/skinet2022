@@ -10,8 +10,8 @@ namespace Core.Interfaces
     public interface IPaymentService
     {
         Task<CustomerBasket> CreateOrUpdatePaymentIntent(string basketId);
-        Task<Order> UpadateOrderPaymentSucceeded(string PaymentIntentId);
-        Task<Order> UpadateOrderPaymentFailed(string PaymentIntentId);
+        Task<Order> UpadateOrderPaymentSucceeded(string paymentIntentId);
+        Task<Order> UpadateOrderPaymentFailed(string paymentIntentId);
         Task<Order> UpdateOrderPaymentSucceeded(string id);
         Task<Order> UpdateOrderPaymentFailed(string id);
     }

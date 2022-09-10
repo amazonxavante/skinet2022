@@ -27,7 +27,5 @@ namespace Core.Specifications
 
         }
 
-
-
     }
 }

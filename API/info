@@ -27,7 +27,7 @@ github.com/TryCatchLearn/Skinet
 GETHUB Steps:
 git/index.lock
 1. git add . 
-2. git commit -m "End of Section 20 "
+2. git commit -m "End of Section 21 "
 3. git push origin master 
 
 Search Class:
@@ -100,6 +100,7 @@ Name: Moonlight2020
 UserName: williamvitorino@hotmail.com
 Portal: http://127.0.0.1:8081
 Install Docker: docker-compose up --detach
+Lesson141: Installing Redis with Docker
 
 Docker Error:
 Inf: docker version 
@@ -158,3 +159,10 @@ Secret key:
 
 Credit Card Number: 4242 4242 4242 4242
   Stripe: stripe listen -f https://localhost:5001/api/payments/webhook -e payment_intent.succeed,payment_intent.payment_failed
+
+  Angular Reduce size File: ng build --configuration "production" 
+  Microsoft Ignite: https://docs.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli
+
+  Npgsql: Npgsql.EntityFrameworkCore.PostgreSQL
+  Migration: dotnet ef migrations add "PostGres initial" -p Infrastructure -s API -c StoreContext -o Data/Migrations
+  Migration Identity: dotnet ef migrations add "PostGres identity initial" -p Infrastructure -s API -c AppIdentityDbContext -o Identity/Migrations
