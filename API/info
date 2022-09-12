@@ -166,3 +166,16 @@ Credit Card Number: 4242 4242 4242 4242
   Npgsql: Npgsql.EntityFrameworkCore.PostgreSQL
   Migration: dotnet ef migrations add "PostGres initial" -p Infrastructure -s API -c StoreContext -o Data/Migrations
   Migration Identity: dotnet ef migrations add "PostGres identity initial" -p Infrastructure -s API -c AppIdentityDbContext -o Identity/Migrations
+  UpdateDataBase: dotnet ef migrations add UpdateDate -c StoreContext -p Infrastructure -s API
+  Dotnet Version: dotnet --info
+
+  Update Angular: ng update @angular/core@14 @angular/cli@14
+  Compatibility: https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+  Angular : npm outdated 
+
+  Digital Ocean:
+  Email Name: amazonxavante@gmail.com
+  Password: Brasilia2020
+  FreeUse 60 Days: http://bit.ly/do-tcl
+  Athentication Password: Brasilia2020World
+  Hostname: skinet-Australia
